@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableau de la carte des prix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dar El Halwa</h1>
+        <h1>Patisserie fine Tunisienne depuis 1900</h1>
+        <figure>
+            <img src="image/patisserie.jpg" alt="photo de la vitrine de la patisserie montrant un assortiment de mignardises traditionnelles">
+            <figcaption>>Notre vitrine de mignardises traditionnelles.</figcaption>
+        </figure>
+    </header>
+    <nav id="sommaire">
+        <ul>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#produits">Nos produits</a></li>
+            <li><a href="#services">Nos service</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Commander un gateau personnalisé
+       <from action="traitement.php" method="post"> 
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <p>
+                <label for="Nom">Nom :</label>
+                <input type="text" id="nom" name="nom" minlength="2" required>
+            </p>
+            <p>
+                <label for="Prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" minlength="2" required>
+            </p>
+            <p>
+                <label for="Email">Adresse électronique :</label>
+                <input type="email" id="email" name="email" placeholder="vous@exemple.tn" required>
+            </p>
+            <p>
+                 <label for="telephone">Télephone :</label>
+                 <input type="tel" id="telephone" name="telephone" pattern="^\+216[0-9]{8}$" title="+216 suivi de 8 chiffres" placeholder="+21622550211" required>   
+            </p>
+            <p>
+                <label for="cp">Code postal :</label>
+                <input type="text" id="cp" name="cp" pattern="^[0-9]{4}$" title="Exactement 4 chiffres" maxlength="4" required>
+            </p>
+            <p>
+                <label for="adresse">Adresse de livraison :</label>
+                <textarea id="adresse" name="adresse" rows="3" cols="40" requires></textarea>
+            </p>
+            <p>
+                <label for="gouvernorat">Gouvernorat :</label>
+                <select id="gouvernorat" name="gouvernorat" required>
+                    <option value="Sfax" selected>Sfax</option>
+                    <option value="Tunis">Tunis</option>
+                    <option value="sousse">Sousse</option>
+                    <option value="gabes">Gabès</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Votre gateau</legend>
+            <p>
+                <label>Occasion :</label>
+                <input type="radio" id="anniv" name="oss" value="anniversaire" required>
+                <label for="anniv">Anniversaire</label>
+                <input type="radio" id="marriage" name="oss" value="marriage">
+                <label for="marriage">Marriage</label>
+                <input type="radio" id="autre" name="oss" value="autre">
+                <label for="autre">Autre</label>
+            </p>
+            <p>
+                <label for="date">Date de retrait :</label>
+                <input type="date" id="date" name="date" require>
+            </p>
+            <p>
+                <label for="parts">Nombre de parts :</label>
+                <input type="number" id="parts" name="parts" min="2" max="100" value="12" required>
+            </p>
+            <p>
+                <label>Paefums souhaités :</label>
+                <input type="checkbox" name="parfums[]" value="chocolat">Chocolat
+                <input type="checkbox" name="parfums[]" value="vanille">Vanille
+                <input type="checkbox" name="parfums[]" value="pistache">Pistache
+            </p>
+            <p>
+                <label for="sucre">Niveau de sucre :</label>
+                <input type="number" id="sucre" min="0" max="10" value="5">
+            </p>
+            <p>
+                <label for="couleur">Couleur du glaçage :</label> 
+                <input type="color" id="couleur" name="couleur" value="#c8912a">
+            </p>
+            <p>
+                <label for="message">Message sur le gateau :</label>
+                <input type="text" id="message" name="message" maxlength="30">
+            </p>
+            <p>
+                <label for="photo">¨Photo de modèle :</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </p>
+    </from>
+    </main>
+
+</body>
+<footer>
+   <p>Dar EL Halwa 1900</p> 
+</footer>
+</html
+
