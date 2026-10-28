@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tableau de la carte des prix</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -26,6 +26,14 @@
     <main>
         <h1>Commander un gateau personnalisé</h1>
        <form action="traitement.php" method="post"> 
+        <div>
+            <label for="website">Site web ou page Instagram :</label>
+            <input type="url" id="website" name="website">
+        </div>
+        <div>
+            <label for="retrait">Heure de retrait souhaitée :</label>
+            <input type="time" id="retrait" name="retrait">
+        </div>
         <fieldset>
             <legend>Vos coordonnées</legend>
             <p>
@@ -110,12 +118,15 @@
             <legend>Précisions</legend>
                 <label for="decors">Langages de décoration :</label>
                 <select multiple size="4" id="decors" name="decors[]">
-                    <option value="fleurs">Fleure</option>
-                    <option value="fruits">Fruits</option>
-                    <option value="chocolat">Chocolat</option>
-                    <option value="amande">Sujets en pate d'amande</option>
+                    <optgroup label="Décors sucrés">
+                       <option value="chocolat">Chocolat</option> 
+                       <option value="amande">Sujets en pate d'amande</option>
+                    </optgroup>
+                    <optgroup label="Décors frais">
+                       <option value="fleurs">Fleure</option>
+                        <option value="fruits">Fruits</option>
+                    </optgroup>
                  </select>
-            
             <p>
                 <label for="precisions">Précisions :</label>
                 <textarea id="precisions" name="precisions" rows="4" cols="40" maxlength="200"></textarea>

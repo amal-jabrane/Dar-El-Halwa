@@ -10,3 +10,7 @@ classe: 1 ere info 15
 - **Symptome :** Cliquer sur le text du label ne sélectionnait pas le champ de saisie.
 - **Cause identifiée :** Utlisation de l'attribut name ou d'une majuscule incorrecte au lieu de l'id exact dans l'attribut for.
 - **Correction appliquée :**Correction des attributs for pour correspondre exactement aux id des champs (ex: for="nom").
+## type HTML5  employés dand le projet :
+-**text/ number** : Utillisés dand la formulaire de commande pour les quantités et les informations textuelles.
+-**ul** : Utilisé pour le champ optionnel du site web ou de la page Instagram
+-**time** : Utilisé pour choisir l'heure de retrait souhaitée
