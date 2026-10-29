@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Carte</title>
 </head>
 <body>
-     <table border="1">
-    <thead>
-        <tr>
-            <th>Catégorie</th>
-            <th>Produit</th>
-            <th>Prix (DT)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="4">Le sucré fin</td>
-            <td>Chocolats</td>
-            <td>45</td>
-        </tr>
-        <tr>
-            <td>Gâteaux</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Morceaux</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>Glaces</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Le salé fin</td>
-            <td>Bouchées froides</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Brochettes</td>
-            <td>70</td>
-        </tr>
-        <tr>
-            <td rowspan="5">Pains & viennoiseries</td>
-            <td>Verrines froides</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Pains</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Viennoiseries</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Confitures</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Miels</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>L'épicerie fine</td>
-            <td>Granola</td>
-            <td>60</td>
-        </tr>
-    </tbody>
-</table>    
+    <header>
+         <h1>dar el halwa</h1>
+        <p>Pâtisserie fine tunisienn depuis 1900</p>
+
+    <figure>
+        <img src="image/patisserie.jpg" alt="Vitrine garnie de mignardises, cornes de gazelle et makrouds">
+        <figcaption>Notre vitrine de mignardises traditionnelles.</figcaption>
+    </figure>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#produits">Nos produits</a></li>
+        <li><a href="index.html#services">Nos services</a></li>
+        <li><a href="index.html#carte.html">Notre carte</a></li>
+        <li><a href="commande.html">Commander</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul><br>
+    </nav>
+    <main>
+        <table>
+            <caption>Carte des prix — tarifs au kilogramme</caption>
+            <thead>
+                <tr>
+                    <th>categorie</th>
+                    <th>produit</th>
+                    <th>prix(Dt)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" scope="row">le sucre fin</td>
+                    <td>chocolats</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>gateaux</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>morceaux</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>glaces</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" scope="row">la sale fin</td>
+                    <td>Bouchées froides</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Brochettes</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>verrines friodes</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" scope="row">Pains & viennoiseries</td>
+                    <td>pains</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>viennoiseries</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" scope="row">L'épicerie fine</td>
+                    <td>Confitures</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Miels</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Granola</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+<footer>
+    <div id="contact">
+    <h2>Contact</h2>
+    <div>
+        <h3>Coordonnées</h3>
+        <p>dar el halwa _ sfax</p>
+        <p>Tél : +216 29 512 816</p>
+    </div>
+    <p>Suivez-nous:</p>
+    <ul>
+        <li><p>telephone: +216 74 000 000</p></li>
+        <li><a href="mailto:contact@darelhalwa.tn">email</a></li>
+        <li><a href="https://www.facebook.com/darelhalwa" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/darelhalwa" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/darelhalwa" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <div>
+        <h3>Horaires</h3>
+        <p>Samedi – Jeudi : 8h – 20h</p>
+        <p>Vendredi : 8h – 12h</p>
+    </div>
+</footer>
 </body>
 </html>

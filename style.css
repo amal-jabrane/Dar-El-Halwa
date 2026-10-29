@@ -131,8 +131,12 @@ nav a {
 }
 nav a:hover {
     background-color: var(--miel);
+
 }
 footer {
+    width:100%;
+    margin:0;
+    padding:20px 0;
     display: flex;
     gap: calc(var(--espace)*2);
     justify-content: space-between;
